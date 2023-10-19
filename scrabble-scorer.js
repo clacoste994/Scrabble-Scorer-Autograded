@@ -35,10 +35,10 @@ function initialPrompt() {
 
 
 function simpleScorer(word) {
-   word = word.toUpperCase();
+   word = word.toLowerCase();
    let letterPoints = 0;
    for (let i = 0; i < word.length; i++) {
-      if (word.length[i] === letterPoints[i]) {
+       if (word.length[i] === letterPoints[i]) {
          letterPoints += 1;
       }
    }
